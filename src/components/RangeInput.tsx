@@ -63,7 +63,6 @@ export default function RangeInput({
   value,
   onChange,
   speed,
-  setSpeed
 }: RangeInputProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const animationFrameId = useRef<number>();
