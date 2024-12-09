@@ -108,13 +108,13 @@ export default class ViolationLayer extends CompositeLayer<
       stroked: true,
       filled: true,
       radiusScale,
-      radiusMinPixels: 5,
+      radiusMinPixels: 1,
       radiusMaxPixels: 100,
       lineWidthMinPixels: 0,
       getPosition: (d: ViolationFeature) => d.geometry.coordinates,
       getRadius: (d: ViolationFeature) => {
-        const MIN_SIZE = 5;
-        const MAX_SIZE = 50;
+        const MIN_SIZE = 1;
+        const MAX_SIZE = 80;
         
         if (!selectedDate) return MIN_SIZE;
 
